@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .flag-container {
+      position: relative;
+      width: 300px; /* Dostosuj szerokość flagi według potrzeb */
+      height: 200px; /* Dostosuj wysokość flagi według potrzeb */
+      background-color: #fff;
+      overflow: hidden;
+    }
+
+    .flag {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #0074cc, #fff 50%, #0074cc);
+      animation: wave 2s ease-in-out infinite;
+    }
+
+    @keyframes wave {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flag-container">
+    <div class="flag"></div>
+  </div>
+</body>
+</html>
